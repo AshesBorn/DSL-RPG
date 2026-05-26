@@ -97,13 +97,18 @@ Lexer → Parser → AST → Semantic Checker → Runtime
 ## Estrutura Geral
 
 ```text
-DSL(V4).ipynb
+DSL_V4.ipynb
 │
-├── Tokens Léxicos
+├── Instalação do PLY
+├── Dependências
+├── Limpeza de Cache
+├── Lexer
 ├── Parser Sintático (PLY/Yacc)
 ├── Nós da AST
 ├── Semantic Checker
-└── Runtime Interativo
+├── Runtime Interativo
+├── Script DSL
+└── Execução
 ```
 
 ---
@@ -221,7 +226,7 @@ jupyter notebook
 Abra:
 
 ```text
-DSL(V4).ipynb
+DSL_V4.ipynb
 ```
 
 Execute todas as células em ordem.
@@ -381,13 +386,18 @@ Lexer → Parser → AST → Semantic Checker → Runtime
 ## General Structure
 
 ```text
-DSL(V4).ipynb
+DSL_V4.ipynb
 │
-├── Lexical Tokens
+├── PLY Installation
+├── Dependencies
+├── Cache Cleaning
+├── Lexer
 ├── Syntax Parser (PLY/Yacc)
 ├── AST Nodes
 ├── Semantic Checker
-└── Interactive Runtime
+├── Interactive Runtime
+├── DSL Script
+└── Execution
 ```
 
 ---
@@ -464,11 +474,11 @@ DSL(V4).ipynb
 
 ```dsl
 character hero {
-    vida = 100;
-    coragem = 10;
+    health = 100;
+    courage = 10;
 }
 
-scene inicio {
+scene start {
     say "You wake up inside an abandoned ship.";
 
     choice {
@@ -478,9 +488,9 @@ scene inicio {
 }
 
 event battle {
-    if vida > 30 then say "You survived the battle.";
-    remove vida 25;
-    add coragem 15;
+    if health > 30 then say "You survived the battle.";
+    remove health 25;
+    add courage 15;
 }
 ```
 
@@ -505,7 +515,7 @@ jupyter notebook
 Open:
 
 ```text
-DSL(V4).ipynb
+DSL_V4.ipynb
 ```
 
 Execute all notebook cells in order.
@@ -567,4 +577,5 @@ https://www.linkedin.com/in/gabriel-franklin-martins-lazzarini-miranda/
 Computer Engineering  
 Centro Universitário Fundação Hermínio Ometto (FHO)
 https://www.linkedin.com/in/lucasfortolan/
+
 ---
